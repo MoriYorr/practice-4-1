@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог книг</title>
+  <script type="module" crossorigin src="/practice-4-1/assets/index-DDRNE4rJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/practice-4-1/assets/index-BVLNm8Dj.css">
+</head>
+<body>
+  <h1>Каталог книг</h1>
+  <!-- Здесь показываем загрузку или ошибку с кнопкой повторной попытки. -->
+  <div id="appStatus" role="status"></div>
+  <!-- Пока данные не загрузились, форму и списки скрываем. -->
+  <div id="appContent" hidden>
+
+  <!-- Форма добавления -->
+  <form id="bookForm">
+    <input name="title" placeholder="Название" required>
+    <input name="authors" placeholder="Авторы (через запятую)" required>
+    <input name="year" type="number" placeholder="Год">
+    <input name="rating" type="number" placeholder="Рейтинг">
+    <button type="submit">Добавить</button>
+  </form>
+  <div id="errorMessage"></div>
+
+  <!-- Блок фильтров -->
+  <div class="filters" id="filters">
+    <input id="filterAuthor" placeholder="Фильтр по автору">
+    <input id="filterYear" type="number" placeholder="Минимальный год">
+    <button id="applyFilters">Применить</button>
+  </div>
+
+  <div class="filters" id="searchBlock">
+    <input id="searchInput" placeholder="Поиск по названию...">
+    <select id="sortBy">
+      <option value="year">По году (новые)</option>
+      <option value="rating">По рейтингу</option>
+    </select>
+  </div>
+
+  <!-- Основной список -->
+  <h2>Все книги</h2>
+  <div id="bookList" class="book-grid"></div>
+
+  <!-- Избранное -->
+  <h2>Моё избранное</h2>
+  <div id="wishlistContainer" class="book-grid"></div>
+  </div>
+
+</body>
+</html>
