@@ -11,6 +11,12 @@ body {
 
 h1 { margin-bottom: 20px; }
 h2 { margin: 24px 0 12px; }
+/* Скрываем форму и списки, пока приложение загружает книги или показывает ошибку. */
+[hidden] { display: none !important; }
+#appStatus { margin-bottom: 16px; }
+#appStatus.error, #errorMessage { color: #b91c1c; }
+#appStatus.error { background: #fee2e2; padding: 16px; border-radius: 8px; }
+#appStatus button { margin-left: 12px; }
 
 form, .filters {
   background: white;

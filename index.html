@@ -6,6 +6,10 @@
 </head>
 <body>
   <h1>Каталог книг</h1>
+  <!-- Здесь показываем загрузку или ошибку с кнопкой повторной попытки. -->
+  <div id="appStatus" role="status"></div>
+  <!-- Пока данные не загрузились, форму и списки скрываем. -->
+  <div id="appContent" hidden>
 
   <!-- Форма добавления -->
   <form id="bookForm">
@@ -39,6 +43,7 @@
   <!-- Избранное -->
   <h2>Моё избранное</h2>
   <div id="wishlistContainer" class="book-grid"></div>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

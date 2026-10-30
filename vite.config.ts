@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-base: '/practice-3-1/', // Замените на точное имя вашего репозитория /practice-3-1/
+  // GitHub Pages открывает проект по адресу /practice-4-1/.
+  base: '/practice-4-1/',
 })
